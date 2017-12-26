@@ -1,0 +1,1 @@
+schtasks /create /tn "R2_SQL_Backup" /tr c:\backup_sql.bat /sc daily /st 14:00:00
