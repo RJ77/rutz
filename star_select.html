@@ -1,0 +1,37 @@
+<style>
+.rate > i.active:before,
+.rate > i.active ~ i:before,
+.rate > i:hover:before,
+.rate > i:hover ~ i:before {
+  content: "\f005";
+
+}
+.rate{
+  direction: rtl;
+  float: left;
+}
+.rate > i {
+  color: #00AFF0;
+}
+</style>
+
+<div class="rate">
+  <i class="fa fa-star-o fa-3x star-rev" aria-hidden="true"></i>
+  <i class="fa fa-star-o fa-3x star-rev" aria-hidden="true"></i>
+  <i class="fa fa-star-o fa-3x star-rev" aria-hidden="true"></i>
+  <i class="fa fa-star-o fa-3x star-rev" aria-hidden="true"></i>
+  <i class="fa fa-star-o fa-3x star-rev" aria-hidden="true"></i>
+</div> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+
+<script>
+$(document).ready(function() {
+  $('star-rev').click(function() {
+    $('star-rev').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+</script>
